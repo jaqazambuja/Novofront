@@ -7,7 +7,7 @@ import { FiInstagram, FiFacebook, AiOutlineWhatsApp } from 'react-icons/fi';
 import "../Pages/Css/Cadastrese.css";
 
 const Cadastrese = () => {
-  const url = "https://back-dandara.herokuapp.com/registro";
+  const url = "https://back-dandara.herokuapp.com/usuarios/registro";
   const [form, setForm] = React.useState({
 
     id_usuario: "",
@@ -19,7 +19,7 @@ const Cadastrese = () => {
     senha: ""
   });
 
-  /*
+  
   const [response, setResponse] = React.useState(null)
 
   function pegarInfo({ target }) {
@@ -29,7 +29,7 @@ const Cadastrese = () => {
   }
 
   function pegarDados(event) {
-      fetch('http://localhost:3005/Cadastrese', {
+      fetch('https://back-dandara.herokuapp.com/usuarios/registro', {
           method: "POST",
           headers: {
               "Content-Type": "application/json"
@@ -46,7 +46,7 @@ const Cadastrese = () => {
           window.location.href='/login';
       }
   }
-*/
+
   return (
     <>
 
@@ -65,7 +65,7 @@ const Cadastrese = () => {
                     <span>Cadastre-se!</span> </div>
               <div className="Cadastrese-screen-body">
 
-                <form action="https://back-dandara.herokuapp.com/registro" method="post" className="formAlign">
+                <form action="https://back-dandara.herokuapp.com/usuarios/registro" method="post" className="formAlign">
                   <div className="Cadastrese-screen-body-item">
                     <div className="Cadastrese-app-form">
                       
