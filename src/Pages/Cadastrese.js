@@ -99,7 +99,7 @@ const Cadastrese = () => {
                        </div>
                         <div className="bt-center" >
                         <button className="Cadastrese-app-form-button">APAGAR</button>
-                        <button href="./MinhaConta" className="Cadastrese-app-form-button2">ENVIAR</button>
+                        <button type="submit" className="Cadastrese-app-form-button2">ENVIAR</button>
                       </div>
                   </div>
                 </form>
