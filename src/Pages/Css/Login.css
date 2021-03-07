@@ -1,0 +1,452 @@
+
+/*
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Login-body, button, input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.LoginBackgroundlg {
+  display: flex;
+  min-height: 10vh;
+  margin-top: 60px;
+  background-color: rgb(226, 226, 226);
+  margin-left: auto;
+  margin-right: auto;
+  background: none;
+}
+
+
+.LoginContainer {
+  background: none;
+  margin-top: 0px;
+  padding: 5px;
+  width: 100%;
+  margin-left: auto;
+  height: 250px;
+  
+  margin-right: auto;
+}
+
+.LoginScreen {
+
+  margin-top: 30px;
+  position: relative;
+  background: linear-gradient(to top, #975420d3 30%, #9b40039d 100%);
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: 0%;
+  padding-bottom: 10px;
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  right: 0px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  z-index: -1;
+}
+
+.Login-Screen-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #81a7cac5;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+
+
+
+.Login-screen-body {
+  display:block;
+
+}
+
+.Login-screen-body-item {
+  flex: 1;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.Login-screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.Login-app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #ffe5db;
+  font-size: 26px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+.Login-app-form-group.message {
+  margin-top: 20px;
+}
+
+
+
+.Login-app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(231, 204, 204);
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.Login-app-form-control::placeholder {
+  color: rgba(255, 227, 227, 0.822);
+}
+
+.Login-app-form-control:focus {
+  border-bottom-color: rgb(255, 248, 248);
+}
+
+.Login-app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+  margin: 10px;
+}
+
+.Login-app-form-button {
+  background: none;
+  border: none;
+  color: #e4cbc2;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  margin: 25px;
+  text-align: center;
+}
+
+
+.Login-app-form-group-buttons-0{
+ margin-left: 300px;
+}
+
+
+.Login-app-form-button-2{
+  color: #e4cbc2;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+  margin: 10px;
+}
+
+.Login-app-form-button-1{
+  color: #e4cbc2;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  margin: 10px;
+}
+
+.Login-app-form-button:hover {
+  color: #ffebf3;
+}
+
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .Login-screen-body-item.left {
+    margin-bottom: 0px;
+  }
+
+  .Login-app-title {
+    flex-direction: row;
+  }
+
+  .Login-app-title span {
+    margin-right: 12px;
+  }
+
+  .Login-app-title:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Login-screen-body {
+    padding: 10px;
+  }
+
+  .Login-screen-body-item {
+    padding: 0;
+  }
+}
+.container-fluid{
+width: 400px;
+margin-bottom: 250px;
+
+}
+
+
+*/
+
+
+.LoginContainer{
+  margin-top: 100px;
+
+  margin-bottom: 50px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+.Login-body, button, input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto; 
+  letter-spacing: 1.4px;
+}
+
+.LoginGroup{
+margin-top: 60px;
+
+}
+
+.LoginBackground {
+  display: flex;
+  min-height: 50vh;
+
+}
+
+.Login-app-title {
+ 
+  color: #e2dad7;
+  font-size: 26px;
+  margin-left: 100px;
+  font-weight: bolder;
+}
+
+.LoginContainer {
+   
+  width: 500px;
+  height: 500px;
+  
+  border-radius: 20px;
+  
+
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 30px;
+  
+}
+
+.LoginScreen {
+  position:relative;
+  background: linear-gradient(to left, #b87407 10%, #bb721f 100%);
+  border-radius: 20px;
+  
+  
+ 
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  right: 0px;
+  bottom: 0;
+  border-radius: 15px;
+ 
+  z-index: -1;
+}
+
+
+
+.Login-screen-body {
+  display:block;
+
+}
+
+.Login-screen-body-item {
+  flex: 1;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.Login-Screen-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #926003c5;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+
+
+.Login-app-form-group {
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+
+
+
+.Login-app-form-control {
+  width: 100%;
+  padding: 15px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(231, 204, 204);
+  color: rgb(253, 253, 253);
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.Login-app-form-control::placeholder {
+  color: rgb(240, 228, 223);
+  
+}
+
+.Login-app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.Login-app-form-button {
+  margin-right: 20px; 
+  background: none;
+  border:0ch;
+  margin-top: 0px;
+  
+}
+.Login-app-form-button2 {
+
+  background: none;
+  margin-left: 5px;
+  border:0ch;
+  margin-top: 0px;
+  margin-right: 2%;
+
+}
+
+.bt-center{
+
+text-align: center;
+margin-left: 110px;
+
+}
+
+
+.formAlign{
+
+align-items: center;
+text-align: center;
+width: auto;
+}
+.Login-app-form-button:hover {
+  color: #ebd5dd;
+}
+
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  
+
+  .Login-app-title {
+    flex-direction: row;
+  }
+
+  .Login-app-title span {
+    margin-right: 12px;
+  }
+
+  .Login-app-title:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Login-screen-body {
+    padding: 2px;
+   
+  }
+
+  .Login-screen-body-item {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.Login-app-form-button-2{
+  color: #e4cbc2;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+  margin: 10px;
+}
+
+.Login-app-form-button-1{
+  color: #e4cbc2;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  margin: 10px;
+}
+.Login-app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+  margin: 10px;
+}
+
+.Login-app-form-button {
+  background: none;
+  border: none;
+  color: #eee2de;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  margin: 25px;
+  text-align: center;
+}
+
+#Login-app-form-group-buttons-0{
+text-align: center;
+margin: 25;
+
+}

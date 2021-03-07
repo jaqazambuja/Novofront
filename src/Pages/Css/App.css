@@ -1,0 +1,13 @@
+body{
+    background:rgb(203, 208, 255);
+    
+}
+
+*{
+    margin: 5;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+}

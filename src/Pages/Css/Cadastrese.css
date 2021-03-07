@@ -1,0 +1,223 @@
+
+.CadastreseContainer{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 100px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+  }
+  
+  .Cadastrese-body, button, input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto; 
+    letter-spacing: 1.4px;
+  }
+  
+.CadastreseGroup{
+ margin-top: 60px;
+
+}
+
+  .CadastreseBackground {
+    display: flex;
+    min-height: 50vh;
+  
+  }
+  
+  .CadastreseContainer {
+     
+    width: 600px;
+    height: auto;
+    
+    border-radius: 20px;
+    
+
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 10px;
+    
+  }
+  
+  .CadastreseScreen {
+    position:relative;
+    background: linear-gradient(to left, #ac7226 10%, #be4f47fd 100%);
+    border-radius: 20px;
+    
+   
+  }
+  
+  .screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    right: 0px;
+    bottom: 0;
+    border-radius: 15px;
+   
+    z-index: -1;
+  }
+  
+  
+  .Cadastrese-screen-body {
+    display:flex;
+  
+  }
+  
+  .Cadastrese-screen-body-item {
+    flex: 10;
+    padding: 10px;
+    padding-top: 0px;
+    margin-top: auto;
+    margin-left: 30%;
+    margin-right: auto;
+  }
+  
+  .Cadastrese-Screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #81a7cac5;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .Cadastrese-app-title {
+    
+    font-family: 'Cinzel', sans-serif;
+    position: top;
+    color: #fff8f6;
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 50px;
+  }
+  
+  .Cadastrese-app-form-group {
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  
+  
+  .Cadastrese-app-form-group.buttons {
+    margin-bottom: 0;
+   
+    margin: 1px;
+    padding: 20px;
+    font-size: 15px;
+    display: inline;
+    background: none;
+    border: none;
+    color: #e4e3e6;
+    cursor: pointer;
+    outline: none;
+    padding: 2px;
+  
+    
+  }
+  
+  .Cadastrese-app-form-control {
+    width: 400px;
+    padding: 10px;
+    background: none;
+    
+    border: none;
+    border-bottom: 1px solid rgba(90, 84, 84, 0.856);
+    color: #ddd;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+    font-size: 12px;
+  }
+  
+  .Cadastrese-app-form-control::placeholder {
+    color: rgb(213, 213, 218);
+    
+  }
+  
+  .Cadastrese-app-form-control:focus {
+    border-bottom-color: #ddd;
+  }
+  
+  .Cadastrese-app-form-button {
+    margin-right: 10px; 
+    background: none;
+    border:0ch;
+    margin-top: 0px;
+    
+  }
+  .Cadastrese-app-form-button2 {
+
+    background: none;
+    margin-left: 5px;
+    border:0ch;
+    margin-top: 0px;
+    margin-right: 0%;
+
+  }
+  
+.bt-center{
+
+  text-align: center;
+  margin-left: 110px;
+
+}
+
+
+  .formAlign{
+
+align-items: center;
+text-align: center;
+width: auto;
+  }
+  .Cadastrese-app-form-button:hover {
+    color: #ebd5dd;
+  }
+  
+  @media screen and (max-width: 520px) {
+    .screen-body {
+      flex-direction: column;
+    }
+  
+    
+  
+    .Cadastrese-app-title {
+      flex-direction: row;
+    }
+  
+    .Cadastrese-app-title span {
+      margin-right: 12px;
+    }
+  
+    .Cadastrese-app-title:after {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .Cadastrese-screen-body {
+      padding: 2px;
+     
+    }
+  
+    .Cadastrese-screen-body-item {
+      padding: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  
+  

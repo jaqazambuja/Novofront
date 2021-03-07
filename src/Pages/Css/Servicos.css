@@ -1,0 +1,286 @@
+.box-servico{
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.caixa-servico{
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.199);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.imgServico{
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+}
+
+.boxBotao{
+    text-align: center;
+}
+
+.botaoServico{
+    background-color: pink;
+    width: 100%;
+    margin: 3px 3px 3px 0px ;
+}
+
+.botaoServico:hover{
+    box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.534);
+}
+
+.caixa-servico .imgServico{
+    width: 300px!important;
+    height:250px!important;
+    width: auto;
+    height: auto;
+}
+
+.desc-servico{
+    width: 300px!important;
+    width: auto;
+    height: auto;
+}
+
+.botaoServico{
+    text-align: center;
+}
+
+/* categoria produtos */
+
+.wrapperServico .sidebarServico{    
+    width: 100%px;
+    height: 100%;
+    padding: 30px 0;
+}
+
+.wrapperServico .sidebarServico h5{
+    color: rgb(2, 2, 2);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wrapperServico .sidebarServico ul li{
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(225, 225, 225, 0.103);
+}
+
+.wrapperServico .sidebarServico ul li a{
+    color: #000000;
+    display: block;
+    background-color: pink;
+    border-radius: 15px;
+}
+
+.wrapperServico .sidebarServico .fc{   
+    width: 30px;
+    height: 25px;
+}
+
+.wrapperServico .sidebarServico ul li:hover a{
+    color: #fff;
+}
+
+.wrapperServico .sidebarServico .redeSocial{
+    position: absolute;
+    border-bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.wrapperServico .sidebarServico .redeSocial a{
+    width: 40px;
+    background: #594f8d;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 5px;
+    color: #dbdbdf;
+    border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.imgSidebarServico{
+    width: 400px;
+    height: 500px;
+}
+
+@media(max-width:1000px){
+    .imgSidebarServico{
+      display: none;
+    }
+  }
+
+/* cards */ 
+
+.servico{
+    width: 350px;
+    height: 450px;
+    background: #f4f4f4;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0;
+    transform: scale(0.95);
+    transition: box-shadow .5s ease-in-out, 
+                transform .5s ease-in-out;
+                overflow: hidden;
+}
+
+.servico:hover{
+    transform: scale(1);
+    box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.199);
+}
+
+.imgBox{
+    width: 100%;
+    height: 80%;
+    overflow:hidden;
+}
+
+.img-img{
+    width: 100%;
+    height: 100%;
+}
+
+.details{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background: #f4f4f4be;
+    padding: 10px 20px;
+    bottom: -30;
+    transition: .5s;
+}
+
+.details:hover{
+    bottom: 0;
+
+}
+
+.text-content{
+    position: relative;
+    margin-top: 10px;
+    color: #555;
+}
+
+.textH3{
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.price{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+}
+
+.textH4{
+    font-size: 18px;
+    margin-top: 15px;
+    padding: 10px 0;
+    font-weight: bold;
+    color: #555;
+}
+
+.btnServico{
+    width: 100%;
+    padding: 5px 0;
+    margin: 10px 0;
+    background: #6167b9;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btnServico:hover{
+    background: #5acef4;
+
+}
+
+.descriptionServico{
+    background: #6167b9;
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    top: -70px;
+    right: 70px;
+    border-radius: 0 0 200px 200px;
+    transition: all .5s, border 1s, top 1s;
+}
+
+.descriptionServico .iconProdu{
+    position: absolute;
+    top: 85px;
+    right: 85px;
+    color: #fff;
+    opacity: 1;
+}
+
+.descriptionServico:hover{
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    border-radius: 0;
+}
+
+.descriptionServico:hover .iconProdu{
+    opacity: 0;
+
+}
+
+.descriptionServico .contentsServico{
+    color: #fff;
+    padding: 5%;
+    transform: translateY(-200%);
+    transition: opacity .2s, transform .8s;
+    opacity: 0;
+}
+
+.descriptionServico:hover .contentsServico{
+    transform: scale(1);
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.descriptionServico .textH2{
+    margin: 20px;
+    text-align: center;
+    
+}
+
+.botaoBuscar{
+    background-color: #ce6d95;
+    color: white;
+}
+
+.fundoNavItens{
+    background-color: rgb(255, 255, 255);
+}
+
+.imgSidebarServico{
+    width: 900px;
+    height: 900px;
+    margin-left: -300px;
+    margin-top: -50px;
+    opacity: 50%;
+
+}
+.container-fluid{
+
+    margin-top: 50px;
+}

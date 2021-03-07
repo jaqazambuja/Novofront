@@ -1,0 +1,61 @@
+
+/*.itens-minha-conta a{
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+ }
+ .itens-minha-conta a:hover{
+    color: blue;
+    text-decoration:underline;
+ }
+ .box-minhas-vendas{
+     background-color:#F1F1F1;
+     border-radius: 8px;
+ }
+ .box-minhas-vendas a{
+     text-decoration: none;
+ }
+ /*hr{
+     border-color: #000;
+ }
+ .card{
+     width: 18rem;
+     margin: 0 auto;
+ }*/
+
+ .containermc{
+     margin-left: 40px;
+     margin-top: 70px;
+ }
+
+ .iconMinhaConta{
+     width: 100px;
+     height: 100px;
+ }
+ 
+ .fiEdit{
+    width: 25px;
+    height: 25px;
+    
+ }
+
+ .boxPerfil{
+  background:linear-gradient(to left, #a5726c 50%, #a5776c 100%);
+  width: 100%;
+  box-shadow: 50px 20px 40px rgba(0, 0, 0, .4);
+  border-radius: 2%;
+  margin-bottom: -5px;
+ }
+
+ .iconContatoConta{
+     width: 30px;
+     height: 30px;
+     margin: 10px;
+     background:none;
+     border-radius: 10px;
+     padding: 3px;
+ }
+ .icon-minha-conta{
+    height: 30px;
+    width: 30px;
+}

@@ -1,0 +1,246 @@
+.icon{
+  width: 50px;
+  height: 50px;
+  margin: 0px;
+  padding: 3px;
+}
+
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.ContatoBackground {
+  display: flex;
+  min-height: auto;
+  background-color: #5a62d6;
+  margin-top: 150px;
+  margin-bottom: 0px;
+  width: 100%;
+  height: 300px;
+  
+}
+
+.ContatoContainer {
+  flex: 1 0 600px;
+  margin: auto;
+  padding: 00px;
+}
+
+.ContatoScreen {
+  background:linear-gradient(to right, #7a391a 0%, #862a1e 100%);
+  width: 100%;
+  box-shadow: 50px 20px 40px rgba(0, 0, 0, .4);
+}
+
+.Contato-Screen:after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+ 
+ 
+  z-index: -1;
+}
+
+.Contato-Screen-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #727aeb;
+  
+}
+
+.Contato-Screen-header-left {
+  margin-right: auto;
+}
+
+.Contato-Screen-header-button {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 8px;
+ 
+}
+
+
+
+
+.Contato-screen-header-right {
+  display: flex;
+}
+
+.Contato-screen-header-ellipsis {
+  width: 3px;
+  height: 3px;
+  margin-left: 2px;
+  border-radius: 8px;
+  background: #999;
+}
+
+.Contato-screen-body {
+  display: flex;
+}
+
+.Contato-screen-body-item {
+  flex: 1;
+  padding-top: 0px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+
+}
+
+.Contato-screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.Contato-app-title {
+  display: flexbox;
+  position: relative;
+  color: #727aeb;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 0%;
+
+}
+
+
+
+.Contato-app-contact {
+  margin-top: auto;
+  font-size: 10px;
+  color: rgb(149, 140, 236);
+  text-align: center;
+  
+}
+
+.Contato-app-form-group {
+  margin-bottom: 10px;
+}
+
+.Contato-app-form-group.message {
+  margin-top: 30px;
+}
+
+.Contato-app-form-group.buttons {
+  margin-bottom: 5;
+  text-align: right;
+}
+
+.Contato-app-form-control {
+  width: 100%;
+  padding: 5px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.Contato-app-form-control::placeholder {
+  color: rgb(91, 102, 165);
+}
+
+.Contato-app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.Contato-app-form-button {
+  background: none;
+  border: none;
+  color: #727aeb;
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
+  margin: 10px;
+}
+
+.Contato-app-form-button:hover {
+  color: #5a62d6;
+}
+
+
+.Contato-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  
+}
+
+@media screen and (max-width: 520px) {
+  .Contato-screen-body {
+    flex-direction: column;
+  }
+
+  .Contato-screen-body-item.left {
+    margin-bottom: 20px;
+  }
+
+  .Contato-app-title {
+    flex-direction: row;
+  }
+
+  .Contato-app-title span {
+    margin-right: 6px;
+  }
+
+  
+}
+
+@media screen and (max-width: 600px) {
+  .Contato-screen-body {
+    padding: 30px;
+  }
+
+  .Contato-screen-body-item {
+    padding: 0;
+  }
+}
+#iconGroup{
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  mask-composite: black;
+  text-align: center;
+}
+
+#iconGroup a{
+  margin: 0 0.6rem;
+  text-size-adjust: 250;
+  text-align: center;
+}
+
+#alternativeLogin {
+   text-align: center;
+  
+   margin-top: 5px;
+}
+
+.Imgcontato{
+ 
+padding-top: 50px;
+  align-self: center;
+  margin-top: -170px;
+  margin-left: 40%;
+  padding-top: 50px;
+  }
+.ContatoCompleto{
+
+width: 100%;
+height: 200px;
+background-color: #5a62d6;
+}
