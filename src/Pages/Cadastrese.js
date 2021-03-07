@@ -65,7 +65,7 @@ const Cadastrese = () => {
                     <span>Cadastre-se!</span> </div>
               <div className="Cadastrese-screen-body">
 
-                <form action="" method="post" className="formAlign" onSubmit={pegarDados}>
+                <form action="https://back-dandara.herokuapp.com/registro" method="post" className="formAlign" onSubmit={pegarDados}>
                   <div className="Cadastrese-screen-body-item">
                     <div className="Cadastrese-app-form">
                       
