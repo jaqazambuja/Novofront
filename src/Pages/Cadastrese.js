@@ -22,7 +22,7 @@ const Cadastrese = () => {
   
   const [response, setResponse] = React.useState(null)
 
-  function pegarInfo({ target }) {
+  /*function pegarInfo({ target }) {
       const { id, value } = target
       setForm({ ...form, [id]: value })
       console.log({ [id]: value });
@@ -46,7 +46,7 @@ const Cadastrese = () => {
           window.location.href='/login';
       }
   }
-
+*/
   return (
     <>
 
