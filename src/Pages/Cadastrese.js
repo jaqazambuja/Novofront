@@ -7,7 +7,7 @@ import { FiInstagram, FiFacebook, AiOutlineWhatsApp } from 'react-icons/fi';
 import "../Pages/Css/Cadastrese.css";
 
 const Cadastrese = () => {
-  const url = "http://localhost:3050/registro";
+  const url = "https://back-dandara.herokuapp.com/registro";
   const [form, setForm] = React.useState({
 
     id_usuario: "",
@@ -65,7 +65,7 @@ const Cadastrese = () => {
                     <span>Cadastre-se!</span> </div>
               <div className="Cadastrese-screen-body">
 
-                <form action="http://localhost:3050/usuarios/registro" method="post" className="formAlign">
+                <form action="https://back-dandara.herokuapp.com/registro" method="post" className="formAlign">
                   <div className="Cadastrese-screen-body-item">
                     <div className="Cadastrese-app-form">
                       

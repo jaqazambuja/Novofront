@@ -21,7 +21,7 @@ export default function CadastrarProdutos() {
 
     }*/
     
-    const url = "http://localhost:3050/admin/produtos/cad";
+    const url = "https://back-dandara.herokuapp.com/admin/produtos/cad";
     const [form, setForm] = React.useState({
 
         username: "",
@@ -41,7 +41,7 @@ export default function CadastrarProdutos() {
 
 
     function enviarDados(event) {
-        fetch('http://localhost:3050/admin/produtos/cad', {
+        fetch('https://back-dandara.herokuapp.com/admin/produtos/cad', {
             method: "POST",
             enctype:'multipart/form-data',
             headers: {

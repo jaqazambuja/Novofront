@@ -10,7 +10,7 @@ const Servicos = () => {
     
     React.useEffect(async()=>{
 
-        const url = await fetch('http://localhost:3050/servicos');    
+        const url = await fetch('https://back-dandara.herokuapp.com/servicos');    
         const urlResponse = await url.json();
 
         setAction(urlResponse);

@@ -15,7 +15,7 @@ const Produtos = () => {
     
     React.useEffect(async()=>{
 
-        const url = await fetch('http://localhost:3050/produtos');    
+        const url = await fetch('https://back-dandara.herokuapp.com/produtos');    
         const urlResponse = await url.json();
 
         setAction(urlResponse);

@@ -32,7 +32,7 @@ export default function CadastrarServicos() {
         console.log({...form, [id]: value })
     }
     function handleSubmit(event) {
-        fetch("http://localhost:3050/admin/servicos/cad", {
+        fetch("https://back-dandara.herokuapp.com/admin/servicos/cad", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

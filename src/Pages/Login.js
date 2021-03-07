@@ -14,7 +14,7 @@ const Login = () => {
     
     React.useEffect(async()=>{
 
-        const url = await fetch('http://localhost:3050/usuarios/login');    
+        const url = await fetch('https://back-dandara.herokuapp.com/usuarios/login');    
         const urlResponse = await url.json();
         
         console.log(JSON.stringify(urlResponse));
@@ -66,7 +66,7 @@ const Login = () => {
 
    
 
-           <form action="http://localhost:3050/usuarios/login" method="post">
+           <form action="https://back-dandara.herokuapp.com/usuarios/login" method="post">
            <div className="Login-screen-body-item">
              <div className="Login-app-form">
                <div className="Login-app-form-group">
