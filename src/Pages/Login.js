@@ -23,7 +23,7 @@ const Login = () => {
 
     }, []);*/
     //inicio codigo
-    const url = "https://back-dandara.herokuapp.com/login";
+    /*const url = "https://back-dandara.herokuapp.com/login";
     const [form, setForm] = React.useState({
         
         username: "",
@@ -48,11 +48,9 @@ const Login = () => {
             },
             //transforma em json para mandar pra api e api mandar pro banco
             body: JSON.stringify(form)
-        }).then((resposta) => {
-           alert(resposta.message)
         })
     }
-    
+    */
     return (
         <div className="BackGround-ilustra">  
             <Menu/>
@@ -75,14 +73,14 @@ const Login = () => {
 
    
 
-           <form action="https://back-dandara.herokuapp.com/usuarios/login" method="post" onSubmit={pegarDados}>
+           <form action="https://back-dandara.herokuapp.com/usuarios/login" method="post">
            <div className="Login-screen-body-item">
              <div className="Login-app-form">
                <div className="Login-app-form-group">
-                 <input type="text" name="username" className="Login-app-form-control" placeholder="Usuário" value={form.username} onChange={pegarInfo}></input>
+                 <input type="text" name="username" className="Login-app-form-control" placeholder="Usuário"></input>
                </div>
                <div className="Login-app-form-group message">
-                <input type="password" className="Login-app-form-control" name="senha" placeholder="Senha" value={form.senha} onChange={pegarInfo}></input>
+                <input type="password" className="Login-app-form-control" name="senha" placeholder="Senha"></input>
                </div> 
                
                <div className="Login-app-form-group buttons">
