@@ -10,7 +10,7 @@ const Login = () => {
     
 
     // puxar o bd e tentar validar
-    const [action, setAction] = React.useState([]);
+    /*const [action, setAction] = React.useState([]);
     
     React.useEffect(async()=>{
 
@@ -21,7 +21,7 @@ const Login = () => {
         setAction(urlResponse);
         
 
-    }, []);
+    }, []);*/
     //inicio codigo
     const url = "https://back-dandara.herokuapp.com/login";
     const [form, setForm] = React.useState({
