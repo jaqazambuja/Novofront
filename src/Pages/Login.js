@@ -22,28 +22,37 @@ const Login = () => {
         
 
     }, []);
-    
-    /*console.log(action[0])
-    let validacao = action.filter(item => item.email == document.getElementById("email").value)
-        console.log(validacao)
-    
-    const validar=()=> {
-        // document.getElementById("email").value !== '' && document.getElementById("senha").value !== '' 
+    //inicio codigo
+    const url = "https://back-dandara.herokuapp.com/login";
+    const [form, setForm] = React.useState({
         
-        let validacao = action.filter(item => item.email === document.getElementById("email").value)
-        console.log(validacao[0])
-        if (document.getElementById("email").value !== '' && document.getElementById("senha").value !== '') {
-            alert('Login efetuado!')
-            localStorage.setItem('key', true);
-            
-        } else {
-            // condição para verificar e colocar no localstorage
-            alert("Acesso negado")  
-        };   
+        username: "",
+        senha: ""
+    });
+
+    const [response, setResponse] = React.useState(null)
+
+    function pegarInfo({ target }) {
+        const { id, value } = target
+        setForm({ ...form, [id]: value })
+        console.log({ [id]: value });
     }
-    if (localStorage.getItem('key')) {
-        window.location='/minhaconta'
-    }*/
+
+   
+     function pegarDados(event) {
+       event.preventDefault()
+        fetch('https://back-dandara.herokuapp.com/login', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            //transforma em json para mandar pra api e api mandar pro banco
+            body: JSON.stringify(form)
+        }).then((resposta) => {
+           alert(resposta.message)
+        })
+    }
+    
     return (
         <div className="BackGround-ilustra">  
             <Menu/>
@@ -66,19 +75,19 @@ const Login = () => {
 
    
 
-           <form action="https://back-dandara.herokuapp.com/usuarios/login" method="post">
+           <form action="https://back-dandara.herokuapp.com/usuarios/login" method="post" onSubmit={pegarDados}>
            <div className="Login-screen-body-item">
              <div className="Login-app-form">
                <div className="Login-app-form-group">
-                 <input type="text" name="username" className="Login-app-form-control" placeholder="Usuário"></input>
+                 <input type="text" name="username" className="Login-app-form-control" placeholder="Usuário" value={form.username} onChange={pegarInfo}></input>
                </div>
                <div className="Login-app-form-group message">
-                <input type="password" className="Login-app-form-control" name="senha" placeholder="Senha"></input>
+                <input type="password" className="Login-app-form-control" name="senha" placeholder="Senha" value={form.senha} onChange={pegarInfo}></input>
                </div> 
                
                <div className="Login-app-form-group buttons">
                  <button className="Login-app-form-button">APAGAR</button>
-                 <button type="submit" href="/minhaconta" className="Login-app-form-button">ENTRAR</button>
+                 <button type="submit" className="Login-app-form-button">ENTRAR</button>
                </div>
 
              </div>
