@@ -14,7 +14,7 @@ import CadastrarServicos from './Pages/CadastrarServicos';
 import { RecuperarSenha } from './Pages/RecuperarSenha';
 import MinhaConta from './Pages/MinhaConta';
 import EditarProdutos from './Pages/EditarProdutos';
-//import PrivateRoute from './PrivateRoute'
+import PrivateRoute from './PrivateRoute'
 
 const Rotas = () => {
     return (
@@ -28,12 +28,12 @@ const Rotas = () => {
                 <Route exact path="/cadastrese" component={Cadastrese} />
                 <Route exact path="/produtos" component={Produtos} />
                 <Route exact path="/esqueciminhasenha" component={RecuperarSenha} />
-                <Route exact path="/editardados" component={EditarDados} />
-                <Route exact path="/editarprodutos:id" component={EditarProdutos} />
-                <Route exact path="/cadastrarprodutos" component={CadastrarProdutos} />
-                <Route exact path="/cadastrarservicos" component={CadastrarServicos} />
+                <PrivateRoute exact path="/editardados" component={EditarDados} />
+                <PrivateRoute exact path="/editarprodutos:id" component={EditarProdutos} />
+                <PrivateRoute exact path="/cadastrarprodutos" component={CadastrarProdutos} />
+                <PrivateRoute exact path="/cadastrarservicos" component={CadastrarServicos} />
                 <Route exact path="/recuperarsenha" component={RecuperarSenha} />
-                <Route exact path="/minhaconta" component={MinhaConta}/>
+                <PrivateRoute exact path="/minhaconta" component={MinhaConta}/>
                 <Route  component={NotFound} />
 
             </Switch>
