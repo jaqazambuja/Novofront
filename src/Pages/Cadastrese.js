@@ -7,7 +7,7 @@ import { FiInstagram, FiFacebook, AiOutlineWhatsApp } from 'react-icons/fi';
 import "../Pages/Css/Cadastrese.css";
 
 const Cadastrese = () => {
-  const url = "https://back-dandara.herokuapp.com/registro";
+  const url = "https://back-dandara.herokuapp.com/auth/register";
   const [form, setForm] = React.useState({
 
     username: "",
@@ -22,31 +22,30 @@ const Cadastrese = () => {
   
   const [response, setResponse] = React.useState(null)
 
-  /*function pegarInfo({ target }) {
+  function pegarInfo({ target }) {
       const { id, value } = target
       setForm({ ...form, [id]: value })
       console.log({ [id]: value });
   }
-
   function pegarDados(event) {
-      fetch('https://back-dandara.herokuapp.com/registro', {
-          method: "POST",
-          headers: {
-              "Content-Type": "application/json"
-          },
-          //transforma em json para mandar pra api e api mandar pro banco
-          body: JSON.stringify(form)
+    let url = 'https://back-dandara.herokuapp.com/auth/register';
+
+    fetch(url, {
+        method: "POST",
+        body: JSON.stringify(form),
+        headers: {
+            "Content-Type": "application/json"
+        }
       }).then((res) => {
-          setResponse(res);
+          setResponse(res)
       })
   }
-
   const Enviar = () => {
       if (alert("Cadastro feito!")) {
           window.location.href='/login';
       }
   }
-*/
+
   return (
     <>
 
@@ -65,41 +64,41 @@ const Cadastrese = () => {
                     <span>Cadastre-se!</span> </div>
               <div className="Cadastrese-screen-body">
 
-                <form action="https://back-dandara.herokuapp.com/registro" method="post" className="formAlign">
+                <form action="https://back-dandara.herokuapp.com/auth/register" method="post" className="formAlign" onSubmit={pegarDados}>
                   <div className="Cadastrese-screen-body-item">
                     <div className="Cadastrese-app-form">
                       
                       <div className="Cadastrese-app-form-group">
-                        <input className="Cadastrese-app-form-control" placeholder="UserName" name="username"></input>
+                        <input className="Cadastrese-app-form-control" placeholder="UserName" name="username" id="username" value={form.username} onChange={pegarInfo}></input>
                       </div>
 
                       <div className="Cadastrese-app-form-group message">
-                        <input type="text" name="nome" className="Cadastrese-app-form-control" placeholder="Nome"></input>
+                        <input type="text" name="nome" className="Cadastrese-app-form-control" placeholder="Nome" id="nome" value={form.nome} onChange={pegarInfo}></input>
                       </div>
 
                       <div className="Cadastrese-app-form-group message">
-                        <input type="number" className="Cadastrese-app-form-control" name="cpf" placeholder="CPF"></input>
+                        <input type="number" className="Cadastrese-app-form-control" name="cpf" placeholder="CPF" id="cpf" value={form.cpf} onChange={pegarInfo}></input>
                       </div>
 
                       <div className="Cadastrese-app-form-group message">
-                        <input type="number" className="Cadastrese-app-form-control" placeholder="Número do Nis" name="numnis"></input>
+                        <input type="number" className="Cadastrese-app-form-control" placeholder="Número do Nis" name="numnis" id="numnis" value={form.numnis} onChange={pegarInfo}></input>
                       </div>
 
                       <div className="Cadastrese-app-form-group message">
-                        <input type="number" className="Cadastrese-app-form-control" placeholder="Celular" name="celular"></input>
+                        <input type="number" className="Cadastrese-app-form-control" placeholder="Celular" name="celular" id="celular" value={form.celular} onChange={pegarInfo}></input>
                       </div>
 
                       <div className="Cadastrese-app-form-group message">
-                        <input type="text" className="Cadastrese-app-form-control" placeholder="Email" name="email"></input>
+                        <input type="text" className="Cadastrese-app-form-control" placeholder="Email" name="email" id="email" value={form.email} onChange={pegarInfo}></input>
                       </div>
 
                       <div className="Cadastrese-app-form-group message">
-                        <input type="password" className="Cadastrese-app-form-control" placeholder="Senha" name="senha"></input>
+                        <input type="password" className="Cadastrese-app-form-control" placeholder="Senha" name="senha" id="senha" value={form.senha} onChange={pegarInfo}></input>
                       </div>
                        </div>
                         <div className="bt-center" >
                         <button className="Cadastrese-app-form-button">APAGAR</button>
-                        <button type="submit" className="Cadastrese-app-form-button2">ENVIAR</button>
+                        <button type="submit" className="Cadastrese-app-form-button2" onClick={Enviar}>ENVIAR</button>
                       </div>
                   </div>
                 </form>
@@ -119,20 +118,3 @@ const Cadastrese = () => {
 export default Cadastrese;
 
 
-/*{{#each erros}}
-    {{texto}}
-{{else}}
-
-{{/each}}
-
-/*<form action="/usuarios/registro" method="post">
-    <label for="nome">Nome: </label>
-        <input type="text" name="nome" class="form-control" required>
-    <label for="email">Email:</label>
-        <input type="email" name="email" class="form-control" required>
-    <label for="senha">Senha: </label>
-        <input type="password" name="senha" class="form-control" required>
-    <label for="senha2">Repita a sua senha: </label>
-        <input type="password" name="senha2" class="form-control" required>
-    <button type="submit" class="btn btn-sucess">Criar conta</button>
-</form>*/

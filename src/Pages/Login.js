@@ -9,48 +9,6 @@ import { FiInstagram, FiFacebook,AiOutlineWhatsApp } from 'react-icons/fi';
 const Login = () => {
     
 
-    // puxar o bd e tentar validar
-    /*const [action, setAction] = React.useState([]);
-    
-    React.useEffect(async()=>{
-
-        const url = await fetch('https://back-dandara.herokuapp.com/usuarios/login');    
-        const urlResponse = await url.json();
-        
-        console.log(JSON.stringify(urlResponse));
-        setAction(urlResponse);
-        
-
-    }, []);*/
-    //inicio codigo
-    /*const url = "https://back-dandara.herokuapp.com/login";
-    const [form, setForm] = React.useState({
-        
-        username: "",
-        senha: ""
-    });
-
-    const [response, setResponse] = React.useState(null)
-
-    function pegarInfo({ target }) {
-        const { id, value } = target
-        setForm({ ...form, [id]: value })
-        console.log({ [id]: value });
-    }
-
-   
-     function pegarDados(event) {
-       event.preventDefault()
-        fetch('https://back-dandara.herokuapp.com/login', {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            //transforma em json para mandar pra api e api mandar pro banco
-            body: JSON.stringify(form)
-        })
-    }
-    */
     return (
         <div className="BackGround-ilustra">  
             <Menu/>
@@ -72,15 +30,15 @@ const Login = () => {
            
 
    
-
-           <form action="https://back-dandara.herokuapp.com/usuarios/login" method="post">
+         
+           <form action="https://back-dandara.herokuapp.com/auth/login"  method="post" >
            <div className="Login-screen-body-item">
              <div className="Login-app-form">
                <div className="Login-app-form-group">
-                 <input type="text" name="username" className="Login-app-form-control" placeholder="Usuário"></input>
+                 <input type="text" name="username" className="Login-app-form-control" placeholder="Usuário" id="username" name="username"></input>
                </div>
                <div className="Login-app-form-group message">
-                <input type="password" className="Login-app-form-control" name="senha" placeholder="Senha"></input>
+                <input type="password" className="Login-app-form-control" name="senha" placeholder="Senha"  id="senha" name="senha"></input>
                </div> 
                
                <div className="Login-app-form-group buttons">
