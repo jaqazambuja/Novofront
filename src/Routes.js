@@ -33,7 +33,7 @@ const Rotas = () => {
                 <PrivateRoute exact path="/cadastrarprodutos" component={CadastrarProdutos} />
                 <PrivateRoute exact path="/cadastrarservicos" component={CadastrarServicos} />
                 <Route exact path="/recuperarsenha" component={RecuperarSenha} />
-                <PrivateRoute exact path="/minhaconta" component={MinhaConta}/>
+                <Route exact path="/minhaconta" component={MinhaConta}/>
                 <Route  component={NotFound} />
 
             </Switch>
