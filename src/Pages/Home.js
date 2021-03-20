@@ -27,10 +27,10 @@ function Home() {
 
             <div className="pure-g">
                 <div className="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                    <p>Dandara um projeto de auxílio que disponibiliza ferramentas de networking 
+                    <p>Dandara é um projeto de auxílio que disponibiliza ferramentas de networking 
                      e de holofote a um público vulnerável.</p>
                      <p>Nossa proposta é oferecer uma plataforma de divulgação para que mulheres periféricas, especialmente mães solo habitantes de comunidades, tenham onde publicar seus produtos e serviços.</p>
-                     <p>O app busca, sobretudo, dar visibilidade a essas pessoas, tendo em vista o constante apagamento que sofrem do governo, suas reformas trabalhistas e medidas de contenção à pandemia excludentes. Por outro lado, há também a sociedade e seu preconceito, o que gera mais estigma.
+                     <p>O projeto busca, sobretudo, dar visibilidade a essas pessoas, tendo em vista o constante apagamento que sofrem do governo, suas reformas trabalhistas e medidas de contenção à pandemia excludentes. Por outro lado, há também a sociedade e seu preconceito, o que gera mais estigma.
                      Assim, entendemos que, enquanto essas mulheres não conseguirem sair da informalidade, precisam de um canal de comunicação que facilite a obtenção de renda.</p>
                 </div>
             </div>
