@@ -11,7 +11,7 @@ const IndexProduto = (props)=>{
        
         alert(`Produto  deletado  recaregar a pagina`)
 
-        fetch(`http://localhost:3050/admin/produtos/delete/${props.id}`, {
+        fetch(`https://back-dandara.herokuapp.com/admin/produtos/delete/${props.id}`, {
             method: "DELETE",
             enctype:'multipart/form-data',
             headers: {
@@ -47,7 +47,7 @@ const IndexProduto = (props)=>{
 
                             <div className='containerproduto container-fluid d-flex justify-content-around'>
                             <button className= "btnServicoDeletar"  type="submit"  onClick={deletar}>Deletar</button>: <></>
-                           <a href={'http://localhost:3000/editarprodutos'+props.id}><button className="btnProduto" type="submit" >Editar</button></a>
+                           <a href={'https://dandara-palmares.netlify.app/editarprodutos'+props.id}><button className="btnProduto" type="submit" >Editar</button></a>
                     </div>
                         </div>
                         <div className="description">
